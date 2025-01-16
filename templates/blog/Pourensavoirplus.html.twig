@@ -1,2 +1,96 @@
-permettra à l’utilisateur d’accéder à une autre page, contenant des photos, en lien
-avec vos loisirs, vos passions, vos envies, vos projets, …
+{% extends 'base.html.twig' %}
+{% block body %}
+<p>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: Arial Narrow;
+            text-align: center;
+            color: white;
+        }
+        .container {
+            font-family: Arial Narrow;
+            width: 80%;
+            max-width: 900px;
+            margin: 30px auto;
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            color: black;
+        }
+
+        header {
+            text-align: center;
+            border-bottom: 2px solid black;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 36px;
+            color: black;
+        }
+               section {
+            margin-bottom: 20px;
+        }
+
+        .section-title {
+            font-size: 24px;
+            color: black;
+            border-bottom: 2px solid black;
+            padding-bottom: 5px;
+            margin-bottom: 10px;
+        }
+
+        ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+
+        li {
+            margin-bottom: 10px;
+            font-size: 16px;
+        }
+
+        .bold {
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Pour en savoir plus</h1>
+            <p>Découvrez plus de détails sur mon parcours, mes projets et mes loisirs. </p>
+        </header>
+        <section>
+            <h2 class="section-title">Qui suis-je ?</h2>
+            <ul>
+                <p>..............</p>
+            </ul>
+        </section>
+        <section>
+            <h2 class="section-title">Mes projets en détail</h2>
+            <ul>
+                <p>Voici quelques-uns des projets sur lesquels j'ai travaillé récemment :</p>
+            <ul>
+                <li><strong>Projet 1 :</strong> ..........</li>
+            </ul>
+                </li>
+            </ul>
+        </section>
+        <section>
+            <h2 class="section-title">Loisirs</h2>
+            <ul>
+                <li><strong>Foot :</strong> J'aime regarder les différentes compétitions de foot (ligue 1, Liga, Premier League, matches internationnaux ....)</li>
+            </ul>
+        </section>
+    </div>
+</body>
+<!--permettra à l’utilisateur d’accéder à une autre page, contenant des photos, en lien
+avec vos loisirs, vos passions, vos envies, vos projets, …-->
+</p>
+{% endblock %}

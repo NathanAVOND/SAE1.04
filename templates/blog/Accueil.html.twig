@@ -1,38 +1,82 @@
-<!DOCTYPE html>
-<html lang="fr">
+{% extends 'base.html.twig' %}
+{% block body %}
+<p>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Page de Présentation</title>
-    <link rel="stylesheet" href="app.css">
+    <style>
+        body {
+            font-family: Arial Narrow;
+            text-align: center;
+            color: white;
+        }
+        .titre {
+            text-align: center;
+            padding: 50px;
+        }
+        .titre h1 {
+            font-size: 3.5rem;
+            color: white;
+        }
+        .section {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            margin: 30px;
+        }
+        .image{
+            flex: 1;
+            max-width: 40%;
+            text-align: center;
+            margin-right: 30px;
+        }
+        .image img {
+            width: 100%;
+            height: auto;
+            border: 2px solid white;
+            border-radius: 10px;
+        }
+        .texte {
+            flex: 1;
+            max-width: 50%;
+        }
+        .texte h3 {
+            color: white;
+            font-size: 2rem;
+        }
+        .texte ul {
+            list-style: none;
+            padding-left: 0;
+        }
+        .texte ul li {
+            margin-bottom: 10px;
+        }
+        .infos {
+            border-radius: 8px;
+            padding: 20px;
+            margin-top: 30px;
+        }
+    </style>
 </head>
 <body>
-    <header>
-        <nav>
+    <section class="titre">
+        <h1>Bienvenue !</h1>
+    </section>
+    <section class="section">
+        <div class="image">
+            <img src="{{ asset('Images/.....') }}" alt="Image">
             <ul>
-                <li><a href="#CV">CV</a></li>
-                <li><a href="#E-PortFolio">E-PortFolio</a></li>
-                <li><a href="#Pourensavoirplus">Pour en savoir plus<a/></li>
+                <li><strong> Etudiant :</strong> IUT Jean-Monnet à Roanne </li>
+                <li><strong> ........ :</strong> ....... </li>
             </ul>
-        </nav>
-    </header>
-
-    <section id="nom">
-        <h1>Bienvenue sur ma page de présentation</h1>
-        <p>AVOND Nathan</p>
+        </div>
+        <!-- Texte (Nom, Prénom, Groupe TP, etc.) -->
+        <div class="texte">
+            <div class="infos">
+                <h3>AVOND Nathan</h3>
+                <p><strong>Groupe TP : AB_B</strong></p>
+                <p>phrase de présentation à rajouter</p>
+        </div>
     </section>
-    <section id="group">
-        <h2>Groupe</h2>
-        <p>Goupe AB_B</p>
-    </section>
-
-    <section id="présentation">
-        <h2>Présentation</h2>
-        <p>phrase de présentation </p>
-    </section>
-
-    <footer>
-        <p>&copy; 2025 AVOND Nathan. Tous droits réservés.</p>
-    </footer>
-</body>
-</html>
+</body> </p>
+{% endblock %}

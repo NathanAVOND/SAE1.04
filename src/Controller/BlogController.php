@@ -23,6 +23,7 @@ class BlogController extends AbstractController
             'controller_name' => 'BlogController',
         ]);
     }
+
     #[Route('/blog/CV', name: 'app_blog_CV')]
     public function CV(): Response
     {
@@ -30,7 +31,16 @@ class BlogController extends AbstractController
             'controller_name' => 'BlogController',
         ]);
     }
-    #[Route('/blog/Pour en savoir plus', name: 'app_blog_Pour en savoir plus')]
+
+    #[Route('/blog/E-Portfolio', name: 'app_blog_E-Portfolio')]
+    public function EPortfolio(): Response
+    {
+        return $this->render('blog/E-Portfolio.html.twig', [
+            'controller_name' => 'BlogController',
+        ]);
+    }
+    
+    #[Route('/blog/Pourensavoirplus', name: 'app_blog_Pour en savoir plus')]
     public function plus(): Response
     {
         return $this->render('blog/Pourensavoirplus.html.twig', [

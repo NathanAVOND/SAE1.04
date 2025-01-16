@@ -1,4 +1,139 @@
-Un en-tête, qui contiendra : « l’intitulé du poste réseaux et
+{% extends 'base.html.twig' %}
+{% block body %}
+<br>
+<p>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Mon CV</title>
+    <style>
+        body {
+            font-family: Arial Narrow;
+            margin: 0;
+            padding: 0;
+            color: white;
+        }
+
+        .container {
+            font-family: Arial Narrow;
+            width: 80%;
+            max-width: 900px;
+            margin: 30px auto;
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            color: black;
+        }
+
+        header {
+            text-align: center;
+            border-bottom: 2px solid black;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 36px;
+            color: black;
+        }
+
+        header p {
+            font-size: 18px;
+            color: black;
+        }
+
+        section {
+            margin-bottom: 20px;
+        }
+
+        .section-title {
+            font-size: 24px;
+            color: black;
+            border-bottom: 2px solid black;
+            padding-bottom: 5px;
+            margin-bottom: 10px;
+        }
+
+        ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+
+        li {
+            margin-bottom: 10px;
+            font-size: 16px;
+        }
+
+        .bold {
+            font-weight: bold;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>AVOND Nathan</h1>
+            <p>E-mail : nathan.avond@gmail.com </p>
+        </header>
+        <section>
+            <h2 class="section-title">Formations</h2>
+            <ul>
+                <li>
+                    <span class="bold">2024 - 2025 :</span> BUT RT, 1<sup>ère</sup> année à l'IUT Jean-Monnet à Roanne
+                </li>
+                <li>
+                    <span class="bold">2023 - 2024 :</span> Bac STI2D, Terminale STI2D au Lycée Carnot à Roanne
+                </li>
+                <li>
+                    <span class="bold">2022 - 2023 :</span> Bac de Français, 1<sup>ère</sup> STI2D au Lycée Carnot à Roanne
+                </li>
+                <li>
+                    <span class="bold">2021 :</span> Brevet des collèges, Collège Louis Aragon à Mably
+                </li>
+            </ul>
+        </section>
+        <section>
+            <h2 class="section-title">Expériences Professionnelles</h2>
+            <ul>
+                <li>
+                    <span class="bold">.......... :</span>..............
+                    <ul>
+                        <li>...............</li>
+                    </ul>
+                </li>
+            </ul>
+        </section>
+        <section>
+            <h2 class="section-title">Compétences</h2>
+            <ul>
+                <li>Ponctualité</li>
+                <li>Rigueur</li>
+                <li>Sérieux</li>
+            </ul>
+        </section>
+        <section>
+            <h2 class="section-title">Langues</h2>
+            <ul>
+                <li><span class="bold">Français :</span> Langue maternelle</li>
+                <li><span class="bold">Anglais :</span>........</li>
+                <li><span class="bold">Italien :</span>.........</li>
+            </ul>
+        </section>
+    </div>
+
+</body>
+</p>
+
+<!--Un en-tête, qui contiendra : « l’intitulé du poste réseaux et
 télécommunications (ou autre) de vos rêves ».
 Des sections et divisions avec les TITRES et contenus suivants
-« Formations », « Expériences Professionnelles » et « Compétences »
+« Formations », « Expériences Professionnelles » et « Compétences » 
+Créer un formulaire d’inscription, sans base de données, afin que les
+personnes ayant complété les champs puissent imprimer votre CV dans
+un format PDF et/ou docx-->
+<!--NE PAS OUBLIER UN BOUTON POUR TELECHARGER CV AVEC UNE EXTENSION-->
+
+{% endblock %}
