@@ -1,5 +1,211 @@
 {% extends 'base.html.twig' %}
 {% block body %}
+<br>
+<p>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mon E-Portfolio</title>
+    <style>
+    body {
+        font-family: Arial Narrow;
+        background-color: dark;
+        color: black;
+        margin: 0;
+        padding: 0;
+    }
 
+    .portfolio {
+        font-family: Arial Narrow;
+        width: 80%;
+        max-width: 900px;
+        margin: 30px auto;
+        background-color: white;
+        padding: 20px;
+        border-radius: 8px;
+        color: black;
+    }
 
+    h1 {
+        text-align: center;
+        font-size: 36px;
+        margin-bottom: 20px;
+        color: black;
+    }
+
+    h2 {
+        font-size: 24px;
+        margin-bottom: 10px;
+        color: black;
+    }   
+    ul {
+        list-style-type: none;
+        padding-left: 0;
+    }
+
+    li {
+        margin-bottom: 12px;
+        font-size: 16px;
+        line-height: 1.5;
+        color: black;
+    }
+
+    strong {
+        color: black;
+        font-weight: bold;
+    }
+
+    section {
+        margin-bottom: 30px;
+    }
+
+    section h2 {
+        border-bottom: 2px solid black;
+        padding-bottom: 5px;
+    }
+    </style>
+</head>
+<body>
+<div class="portfolio">
+    <h1>Résumé de mon Portfolio</h1>
+
+    <section>
+        <h2>AC 11.01 : Introduction aux systèmes numériques et réseaux</h2>
+        <ul>
+            <li><strong>Contenu :</strong> Étude des mathématiques du signal, des transmissions de données et des réseaux informatiques (modèles OSI, TCP/IP, adressage IP).</li>
+            <li><strong>Apprentissage :</strong> Théorie et pratique avec exercices sur les signaux et configurations de réseaux locaux.</li>
+            <li><strong>Amélioration :</strong> Approfondir la compréhension des effets du bruit et des interférences (R1.13/R1.14) et renforcer les compétences pratiques en configuration de réseaux et sécurité (SAE 1.02).</li>
+            <li><strong>Auto-évaluation :</strong> Solides bases théoriques mais besoin de plus de pratique.</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>AC 11.02 : Comprendre l'architecture des systèmes numériques et les principes de codage</h2>
+        <ul>
+            <li><strong>R1.06 (Architecture des systèmes numériques) :</strong> Note 2/4 - Bonne compréhension des bases, progrès nécessaires sur les architectures complexes.</li>
+            <li><strong>SAE 1.02 (Réseaux informatiques) :</strong> Note 3/4 - Bonne maîtrise des bases, des progrès sont possibles pour la configuration avancée.</li>
+            <li><strong>SAE 1.01 (Cybersécurité) :</strong> Note 4/4 - Excellente maîtrise des concepts de cybersécurité.</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>AC 11.03 : Configuration des fonctions de base d’un réseau local</h2>
+        <ul>
+            <li><strong>R1.03 (Réseaux locaux) :</strong> Note 2/4 - Nécessité de progrès en configuration des équipements actifs et gestion des réseaux locaux.</li>
+            <li><strong>R1.01 (Réseaux d’entreprise) :</strong> Note 3/4 - Bonne maîtrise des bases mais besoin d’approfondir la configuration avancée.</li>
+            <li><strong>SAE 1.02 (Réseaux informatiques) :</strong> Note 3/4 - Bonne compréhension des bases, mais plus de pratique nécessaire.</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>AC 11.04 : Configuration et administration des systèmes d’exploitation</h2>
+        <ul>
+            <li><strong>R1.08 (Systèmes d’exploitation) :</strong> Note 2/4 - Besoin d’approfondir la gestion avancée des systèmes.</li>
+            <li><strong>R1.02 (Architecture des réseaux) :</strong> Note 3/4 - Bonne compréhension des réseaux mais gestion des réseaux complexes à améliorer.</li>
+            <li><strong>SAE 1.01 (Cybersécurité) :</strong> Note 3/4 - Bonne compréhension mais encore des progrès à faire dans l’application pratique.</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>AC 11.05 : Identifier et diagnostiquer les dysfonctionnements dans un réseau local</h2>
+        <ul>
+            <li><strong>R1.03 (Réseaux locaux) :</strong> Note 2/4 - Difficultés à identifier et résoudre les erreurs de configuration.</li>
+            <li><strong>R1.01 (Réseaux d’entreprise) :</strong> Note 2/4 - Difficultés dans l'identification des dysfonctionnements dans des configurations complexes.</li>
+            <li><strong>SAE 1.02 (Réseaux informatiques) :</strong> Note 3/4 - Bonne base théorique mais encore des progrès à faire pour diagnostiquer les erreurs complexes.</li>
+            <li><strong>SAE 1.01 (Cybersécurité) :</strong> Note 4/4 - Excellente maîtrise des concepts de cybersécurité, utile pour détecter les failles.</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>AC 11.06 : Installer un poste client</h2>
+        <ul>
+            <li><strong>R1.03 (Réseaux locaux) :</strong> Note 2/4 - Difficultés dans l'application des configurations complexes.</li>
+            <li><strong>R1.01 (Réseaux d’entreprise) :</strong> Note 2/4 - Difficultés pratiques lors de l'installation de postes clients dans des réseaux complexes.</li>
+            <li><strong>SAE 1.02 (Réseaux informatiques) :</strong> Note 2/4 - Besoin de plus de pratique sur des réseaux complexes.</li>
+            <li><strong>R1.08 (Systèmes d’exploitation) :</strong> Note 3/4 - Bonnes compétences pour l'installation des systèmes d’exploitation sur des postes clients.</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>AC 12.01 : Mesurer et analyser les signaux</h2>
+        <ul>
+            <li><strong>R1.04 (Fondamentaux des systèmes électroniques) :</strong> Note 3/4 - Bonne maîtrise des concepts, mais des améliorations sont possibles dans l'analyse de signaux complexes.</li>
+            <li><strong>R1.05 (Supports de transmission pour les réseaux locaux) :</strong> Note 3/4 - Bonne compréhension des supports de transmission, mais des exercices plus complexes sont nécessaires pour approfondir l'analyse des signaux.</li>
+            <li><strong>R1.13 (Mathématiques du signal) :</strong> Note 3/4 - Bonne compréhension des concepts de base, mais des simulations complexes sur la modulation et les interférences seraient bénéfiques.</li>
+            <li><strong>R1.14 (Mathématiques des transmissions) :</strong> Note 3/4 - Bonne compréhension, mais il faut plus de pratique et d'analyse dans des contextes réels pour mieux appréhender les transmissions.</li>
+            <li><strong>SAE 1.03 (Découvrir un dispositif de transmission) :</strong> Note 3/4 - Bonne approche des dispositifs de transmission, mais davantage de pratique avec des dispositifs réels est nécessaire.</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>AC 12.02 : Caractériser des systèmes de transmissions élémentaires</h2>
+        <ul>
+            <li><strong>R1.13 et R1.14 (Modélisation et analyse des systèmes de transmission) :</strong> Note 3/4 - Bonne compréhension des systèmes de transmission, mais des approfondissements théoriques sont nécessaires pour maîtriser pleinement les concepts complexes.</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>AC 12.03 : Déployer des supports de transmission</h2>
+        <ul>
+            <li><strong>R1.03 et R1.01 (Études des supports de transmission et configuration des équipements actifs) :</strong> Note 2/4 - Des progrès sont nécessaires dans le déploiement et la configuration, en particulier pour les réseaux complexes.</li>
+            <li><strong>R1.05 (Transmission dans les réseaux locaux) :</strong> Note 3/4 - Bonne maîtrise des bases de la transmission, mais plus de pratique sur des réseaux complexes est essentielle.</li>
+            <li><strong>SAE 1.03 (Configuration et test des dispositifs de transmission) :</strong> Note 3/4 - Bon niveau de compétence, mais plus de pratique sur des réseaux complexes serait bénéfique pour approfondir les compétences.</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>AC 12.05 : Communiquer avec un client ou un collaborateur</h2>
+        <ul>
+            <li><strong>SAE 1.03 (Compétences de communication dans un contexte professionnel) :</strong> Note 2/4 - Besoin d'améliorer les compétences de communication professionnelle, notamment dans des contextes complexes.</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>AC 13.01 : Utiliser un système informatique et ses outils</h2>
+        <ul>
+            <li><strong>R1.03 et R1.06 (Architecture des systèmes numériques et outils de gestion de données) :</strong> Note 2/4 - Des améliorations sont nécessaires dans l'utilisation des outils de gestion des systèmes et dans l'architecture des systèmes numériques.</li>
+            <li><strong>SAE 1.05 (Traitement de données : Traitement et analyse des données) :</strong> Note 2/4 - Des progrès sont nécessaires pour améliorer vos compétences dans le traitement des données.</li>
+            <li><strong>R1.01, R1.07, R1.08 (Réseaux informatiques, programmation et systèmes d’exploitation) :</strong> Note 3/4 - Bonne maîtrise des bases, mais davantage de pratique est nécessaire dans la gestion des systèmes informatiques.</li>
+            <li><strong>SAE 1.04 (Présentation professionnelle sur Internet) :</strong> Note 4/4 - Excellente maîtrise de la présentation sur Internet, ce qui reflète une compétence élevée dans ce domaine.</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>AC 13.02 : Lire, exécuter, corriger et modifier un programme</h2>
+        <ul>
+            <li><strong>R1.07 (Fondamentaux de la programmation) et R1.08 (Systèmes d’exploitation) :</strong> Note 3/4 - Bonne maîtrise des bases de la programmation et des systèmes d’exploitation, mais des améliorations sont possibles pour des applications plus complexes.</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>AC 13.03 : Traduire un algorithme, dans un langage et pour un environnement donné</h2>
+        <ul>
+            <li><strong>R1.07 et SAE 1.05 (Programmation d'algorithmes dans des environnements donnés) :</strong> Note 2/4 - Des progrès sont nécessaires pour traduire des algorithmes et les adapter correctement dans des environnements spécifiques.</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>AC 13.04 : Connaître l’architecture et les technologies d’un site Web</h2>
+        <ul>
+            <li><strong>R1.09 et SAE 1.04 (Connaissances sur l’architecture et les technologies d’un site Web) :</strong> Note 4/4 - Excellente maîtrise de l'architecture et des technologies d'un site Web.</li>
+            <li><strong>SAE 1.05 (Analyse et gestion des technologies liées au développement Web) :</strong> Note 3/4 - Bonne maîtrise, mais un approfondissement des compétences en développement Web serait bénéfique.</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>AC 13.05 : Choisir les mécanismes de gestion de données adaptés au développement de l’outil</h2>
+        <ul>
+            <li><strong>SAE 1.05 (Choix des mécanismes de gestion de données) :</strong> Note 2/4 - Il est nécessaire de progresser dans la gestion des données adaptées aux outils de développement.</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>AC 13.06 : S’intégrer dans un environnement propice au développement et au travail collaboratif</h2>
+        <ul>
+            <li><strong>R1.07 et SAE 1.05 (Intégration dans des environnements collaboratifs et travail en équipe) :</strong> Note 2/4 - Des améliorations sont nécessaires pour une meilleure intégration dans des environnements collaboratifs et le travail en équipe.</li>
+        </ul>
+    </section>
+    </div>
+</body>
+</p>
 {% endblock %}

@@ -5,7 +5,6 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Mon CV</title>
     <style>
         body {
@@ -69,6 +68,9 @@
         .bold {
             font-weight: bold;
         }
+        .téléchargement{
+            text-align: center;
+        }
 
     </style>
 </head>
@@ -77,6 +79,7 @@
         <header>
             <h1>AVOND Nathan</h1>
             <p>E-mail : nathan.avond@gmail.com </p>
+            <p>Mon objectif professionnel est de spécialiser en expert-cybersécurité</p>
         </header>
         <section>
             <h2 class="section-title">Formations</h2>
@@ -85,10 +88,7 @@
                     <span class="bold">2024 - 2025 :</span> BUT RT, 1<sup>ère</sup> année à l'IUT Jean-Monnet à Roanne
                 </li>
                 <li>
-                    <span class="bold">2023 - 2024 :</span> Bac STI2D, Terminale STI2D au Lycée Carnot à Roanne
-                </li>
-                <li>
-                    <span class="bold">2022 - 2023 :</span> Bac de Français, 1<sup>ère</sup> STI2D au Lycée Carnot à Roanne
+                    <span class="bold">2021 - 2024 :</span> Bac STI2D au Lycée Carnot à Roanne reçu avec mention assez bien
                 </li>
                 <li>
                     <span class="bold">2021 :</span> Brevet des collèges, Collège Louis Aragon à Mably
@@ -99,16 +99,16 @@
             <h2 class="section-title">Expériences Professionnelles</h2>
             <ul>
                 <li>
-                    <span class="bold">.......... :</span>..............
-                    <ul>
-                        <li>...............</li>
-                    </ul>
+                    <span class="bold"> 2020 :</span> Stage découverte dans un cabinet d'architecture (Equilibre Architecte) à Mably
                 </li>
             </ul>
         </section>
         <section>
             <h2 class="section-title">Compétences</h2>
             <ul>
+                <li>Word, PowerPoint, Excel</li>
+                <li>Certification Pix</li>
+                <li>Certification MOOC</li>
                 <li>Ponctualité</li>
                 <li>Rigueur</li>
                 <li>Sérieux</li>
@@ -118,22 +118,50 @@
             <h2 class="section-title">Langues</h2>
             <ul>
                 <li><span class="bold">Français :</span> Langue maternelle</li>
-                <li><span class="bold">Anglais :</span>........</li>
-                <li><span class="bold">Italien :</span>.........</li>
+                <li><span class="bold">Anglais :</span> Niveau A2</li>
+                <li><span class="bold">Italien :</span> Niveau A2</li>
             </ul>
         </section>
     </div>
+    <div class="téléchargement">
+    <h2 class="titre">Télécharger</h2>
+    <form id="telechargerForm" onsubmit="return handleFormSubmit(event)">
+        <label for="nom">Nom :</label>
+        <input type="text" id="nom" name="nom" required><br>
+        <br>
+        <label for="prenom">Prénom :</label>
+        <input type="text" id="prenom" name="prenom" required><br>
+        <br>
+        <label for="email">E-mail :</label>
+        <input type="email" id="email" name="email" required><br>
+        <br>
+        <button type="submit" class="btn btn-outline-light">Valider</button>
+    </form>
+</div>
 
+<script>
+    function handleFormSubmit(event) {
+        event.preventDefault(); // Empêche l'envoi classique du formulaire
+
+        // Récupère les valeurs des champs
+        const nom = document.getElementById('nom').value.trim();
+        const prenom = document.getElementById('prenom').value.trim();
+        const email = document.getElementById('email').value.trim();
+
+        // Vérifie si tous les champs sont remplis
+        if (!nom || !prenom || !email) {
+            alert("Veuillez remplir tous les champs avant de confirmer.");
+            return false;
+        }
+
+        // Si les champs sont valides, lance le téléchargement
+        const downloadLink = document.createElement('a');
+        downloadLink.href = '/Images/CV.pdf'; // Chemin du fichier à télécharger
+        downloadLink.download = 'CV.pdf';  // Le nom du fichier téléchargé
+        downloadLink.click(); // Simule un clic sur le lien pour déclencher le téléchargement
+        return true;
+    }
+</script>
 </body>
 </p>
-
-<!--Un en-tête, qui contiendra : « l’intitulé du poste réseaux et
-télécommunications (ou autre) de vos rêves ».
-Des sections et divisions avec les TITRES et contenus suivants
-« Formations », « Expériences Professionnelles » et « Compétences » 
-Créer un formulaire d’inscription, sans base de données, afin que les
-personnes ayant complété les champs puissent imprimer votre CV dans
-un format PDF et/ou docx-->
-<!--NE PAS OUBLIER UN BOUTON POUR TELECHARGER CV AVEC UNE EXTENSION-->
-
 {% endblock %}
